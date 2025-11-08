@@ -11,3 +11,4 @@ flask-server и arduino-connect обязательно открывается в
 Нужно не забывать что в коде нужно поменять пути ip компьтеров (в client-cv SERVER_URL = "http://XXX.XX.XX.X:500X/plate", в flask-server CLIENT_ARDUINO_URL = "http://XXX.XX.XX.X:500X/command")
 Также в flask-server необходимо поменять путь для Excel файла с базой данных номерных знаков(EXCEL_FILE = r"C:\Users\User\Desktop\schlagbaum\spisoknomerov.xlsx")
 Не забывайте что arduino нужно подключить к нужному порту в arduino-connect(arduino = serial.Serial('COM3', 9600, timeout=1))
+В servo.ino код от arduino, используйте car3.jpeg или камеру для считывания номеров(так же не забудте поменять путь IMAGE_PATH = "car3.jpeg" либо добавить камеру VIDEO_SOURCE = 0)
